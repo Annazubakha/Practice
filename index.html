@@ -4,18 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIMPLY CHOCOLATE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html"
-        >SIMPLY CHOCOLATE<img src="./images/icon.svg" alt="icon"
+    <header class="header">
+      <a class="logo link" href="./index.html">
+        <span class="logo-span">SIMPLY</span> CHOCOLATE<img
+          src="./images/icon.svg"
+          alt="icon"
       /></a>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">How it’s made?</a></li>
-        <li><a href="">Chocolate is loved</a></li>
-      </ul>
-      <ul>
+      <nav class="header-nav">
+        <ul class="header-nav-list list">
+          <li><a class="nav-link link">Home</a></li>
+          <li><a class="nav-link link" href="">How it’s made?</a></li>
+          <li>
+            <a class="nav-link link" href="">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="header-icons-list list">
         <li>
           <a href=""
             ><img src="./images/icon-facebook.svg" alt="Facebook" width="40"
@@ -34,16 +48,20 @@
       </ul>
     </header>
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <ul>
-          <li><button type="button">Buy now</button></li>
-          <li><button type="button">How it’s made</button></li>
+        <ul class="hero-list list">
+          <li class="hero-item">
+            <button class="button-buy" type="button">Buy now</button>
+          </li>
+          <li class="hero-item">
+            <button class="button-how" type="button">How it’s made</button>
+          </li>
         </ul>
-        <button type="button">scroll down</button>
+        <button class="button-scroll" type="button">scroll down</button>
       </section>
     </main>
   </body>
