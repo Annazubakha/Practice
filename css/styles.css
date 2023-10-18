@@ -3,20 +3,59 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   text-decoration: none;
 }
+
+.container {
+  max-width: 1400px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+}
+
 /* HEADER */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav-list {
+  display: flex;
+  gap: 24px;
+  margin-right: 90px;
+}
+
+.header-icons-list {
+  display: flex;
+  gap: 24px;
+}
 .logo {
   color: var(--black, #111);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: -0.54px;
+  padding: 30px 0;
+  margin-right: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .logo-span {
@@ -24,11 +63,13 @@ body {
 }
 
 .nav-link {
+  display: block;
   color: var(--black, #111);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: -0.28px;
+  padding: 32px 0;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -36,14 +77,25 @@ body {
 }
 /* HERO */
 .hero {
+  padding-bottom: 80px;
+}
+.container-hero {
   background-color: rgba(17, 17, 17, 0.7);
+  padding: 381px 40px 40px 40px;
+  border-radius: 30px;
 }
 .hero-title {
+  width: 484px;
   color: #fff;
   font-size: 28px;
   font-weight: 500;
   line-height: 1.21;
   letter-spacing: -0.84px;
+  margin-bottom: 32px;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 .button-buy {
   color: #fff;
@@ -53,6 +105,10 @@ body {
   line-height: normal;
   border-radius: 100px;
   background-color: var(--orange, #fd9222);
+  padding: 14px 40px;
+  min-width: 144px;
+  height: 45px;
+  border: none;
 }
 .button-buy:hover,
 .button-buy:focus {
@@ -67,6 +123,10 @@ body {
   line-height: normal;
   border-radius: 100px;
   background-color: transparent;
+  padding: 14px 40px;
+  min-width: 183px;
+  height: 45px;
+  border: 1px solid #fff;
 }
 .button-how:hover,
 .button-how:focus {
@@ -81,8 +141,14 @@ body {
   line-height: 1.29;
   letter-spacing: -0.42px;
   background-color: transparent;
+  border: none;
 }
 .button-scroll:hover,
 .button-scroll:focus {
   color: #fd9222;
+}
+
+.hero-list {
+  display: flex;
+  gap: 14px;
 }
