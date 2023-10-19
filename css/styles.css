@@ -1,4 +1,8 @@
-/* BODY */
+/**
+  |============================
+  | BODY
+  |============================
+*/
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -23,6 +27,12 @@ p {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,13 +48,17 @@ p {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   padding-left: 32px;
   padding-right: 32px;
   margin: 0 auto;
 }
 
-/* HEADER */
+/**
+  |============================
+  | HEADER
+  |============================
+*/
 .header-container {
   display: flex;
   align-items: center;
@@ -89,7 +103,11 @@ p {
 .nav-link:focus {
   color: #fd9222;
 }
-/* HERO */
+/**
+  |============================
+  | HERO
+  |============================
+*/
 .hero {
   padding-bottom: 80px;
 }
@@ -200,4 +218,67 @@ p {
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.28px;
+}
+
+/**
+  |============================
+  | SECTION BENEFITS
+  |============================
+*/
+.section-ingredients {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.ingredients-title {
+  margin-bottom: 50px;
+  color: var(--black, #111);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  width: 412px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.orange-span {
+  color: #fd9222;
+}
+.ingredients-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.ingredients-subtitle {
+  margin-top: 36px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+}
+
+.ingredients-item {
+  width: calc((100% - 3 * 32px) / 4);
+  padding: 28px 23px;
+}
+.ingredients-item:nth-child(4n + 1) {
+  background-color: #fd9222;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.ingredients-item:nth-child(2n) {
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  color: #111;
+}
+
+.ingredients-item:nth-child(4n + 3) {
+  background-color: #1e1823;
+  border-radius: 15px;
+  color: #fff;
 }
