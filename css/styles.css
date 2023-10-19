@@ -23,6 +23,20 @@ p {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1400px;
   padding-left: 32px;
@@ -151,4 +165,39 @@ p {
 .hero-list {
   display: flex;
   gap: 14px;
+}
+
+/**
+  |============================
+  | SECTION BENEFINTS
+  |============================
+*/
+.benefits {
+  background: #1e1823;
+  padding: 50px 0;
+}
+.benefits-list {
+  display: flex;
+  gap: 88px;
+}
+
+.benefits-item {
+  width: calc((100% - 88px * 2) / 3);
+}
+.benefits-title {
+  color: var(--white, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.22;
+  margin-bottom: 18px;
+}
+
+.benefits-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: -0.28px;
 }
